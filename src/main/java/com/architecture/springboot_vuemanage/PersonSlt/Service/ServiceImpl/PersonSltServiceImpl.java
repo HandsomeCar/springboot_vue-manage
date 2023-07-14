@@ -1,8 +1,8 @@
-package com.architecture.PersonSlt.Service.ServiceImpl;
+package com.architecture.springboot_vuemanage.PersonSlt.Service.ServiceImpl;
 
-import com.architecture.PersonSlt.Entity.PersonSltEntity;
-import com.architecture.PersonSlt.Mapper.PersonSltMapper;
-import com.architecture.PersonSlt.Service.PersonSltService;
+import com.architecture.springboot_vuemanage.PersonSlt.Entity.PersonSltEntity;
+import com.architecture.springboot_vuemanage.PersonSlt.Mapper.PersonSltMapper;
+import com.architecture.springboot_vuemanage.PersonSlt.Service.PersonSltService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.architecture.PersonSlt.Entity;
+package com.architecture.springboot_vuemanage.PersonSlt.Entity;
 
 import lombok.Data;
 
