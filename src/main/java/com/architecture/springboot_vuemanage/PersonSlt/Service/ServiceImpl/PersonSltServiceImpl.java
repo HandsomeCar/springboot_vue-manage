@@ -6,9 +6,11 @@ import com.architecture.springboot_vuemanage.PersonSlt.Service.PersonSltService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 @Service
+@Resource
 public class PersonSltServiceImpl implements PersonSltService {
     @Autowired
     PersonSltMapper personSltMapper;
