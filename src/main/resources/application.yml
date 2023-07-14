@@ -1,0 +1,26 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: 123456
+
+  #配置 Jpa
+  jpa:
+    hibernate:
+      ddl-auto: update
+    # SQL语句打印
+    show-sql: true
+    # 配置方言
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    open-in-view: false
+
+mybatis-plus:
+  mapper-locations: classpath*:com/architecture/**/*Mapper
+  global-config:
+    # 关闭MP3.0自带的banner
+    banner: false
+
