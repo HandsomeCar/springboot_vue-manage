@@ -14,7 +14,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/person")
-@ResponseBody
 public class PersonSltController {
 
     @Autowired

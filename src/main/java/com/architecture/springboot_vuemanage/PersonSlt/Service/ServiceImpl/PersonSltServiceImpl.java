@@ -10,7 +10,6 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @Service
-@Resource
 public class PersonSltServiceImpl implements PersonSltService {
     @Autowired
     PersonSltMapper personSltMapper;
