@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.architecture.springboot_vuemanage.PersonSlt.Mapper.PersonSltMapper">
+
+    <!--<select id="getNeedClearCarNo" resultType="java.lang.String">-->
+    <!--select concat(user_id,"_",vehicle_number) from x_biz_car bc where not exists (select 1 from x_cls_car cc where bc.vehicle_number = cc.vehicle_number and bc.user_id = cc.user_id)-->
+    <!--and #{end} >= create_time  and create_time >= #{start} limit 0,100-->
+    <!--</select>-->
+
+    <select id="getOne" resultType="java.lang.String">
+        select concat(a.id, "_", a.name)
+        from person a
+        where a.id = #{id}
+    </select>
+
+
+</mapper>

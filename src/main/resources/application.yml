@@ -19,8 +19,7 @@ spring:
     open-in-view: false
 
 mybatis-plus:
-  mapper-locations: classpath*:com/architecture/**/*Mapper
+  mapper-locations: classpath:mapper/*.xml
   global-config:
     # 关闭MP3.0自带的banner
     banner: false
-

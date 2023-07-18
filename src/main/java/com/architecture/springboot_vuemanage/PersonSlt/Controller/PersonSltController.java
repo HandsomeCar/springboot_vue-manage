@@ -1,15 +1,10 @@
 package com.architecture.springboot_vuemanage.PersonSlt.Controller;
 
 import com.architecture.springboot_vuemanage.PersonSlt.Entity.PersonSltEntity;
-import com.architecture.springboot_vuemanage.PersonSlt.Mapper.PersonSltMapper;
-import com.architecture.springboot_vuemanage.PersonSlt.Service.PersonSltService;
+import com.architecture.springboot_vuemanage.PersonSlt.Service.ServiceImpl.PersonSltServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 @RestController
@@ -17,10 +12,20 @@ import java.util.List;
 public class PersonSltController {
 
     @Autowired
-    PersonSltService personSltService;
+    PersonSltServiceImpl personSltService;
 
     @GetMapping("/selectAll")
-    public List<PersonSltEntity> getAll(){
+    public List<PersonSltEntity> getAll() {
         return personSltService.getSelectAll();
+    }
+
+    @PostMapping("/getById")
+    public PersonSltEntity getById(@RequestParam("id") String id, @RequestParam("name") String name) {
+        return personSltService.getOneByIdAndName(id, name);
+    }
+
+    @PostMapping("/getOnePerson")
+    public String getOnePerson(@RequestParam("id") String id) {
+        return personSltService.getOnePerson(id);
     }
 }
