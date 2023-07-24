@@ -14,5 +14,9 @@
         where a.id = #{id}
     </select>
 
+    <select id="selectAll" resultType="com.architecture.springboot_vuemanage.PersonSlt.Entity.PersonSltEntity">
+        select *
+        from person
+    </select>
 
 </mapper>

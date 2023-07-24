@@ -13,7 +13,7 @@ import java.util.List;
 @Repository
 public interface PersonSltMapper extends BaseMapper<PersonSltEntity> {
 
-    @Select("select * from person")
+//    @Select("select * from person")
     List<PersonSltEntity> selectAll();
 
     String getOne(@Param("id") String id);

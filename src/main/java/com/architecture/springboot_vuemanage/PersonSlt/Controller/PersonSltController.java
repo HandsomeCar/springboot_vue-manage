@@ -1,7 +1,7 @@
 package com.architecture.springboot_vuemanage.PersonSlt.Controller;
 
 import com.architecture.springboot_vuemanage.PersonSlt.Entity.PersonSltEntity;
-import com.architecture.springboot_vuemanage.PersonSlt.Service.ServiceImpl.PersonSltServiceImpl;
+import com.architecture.springboot_vuemanage.PersonSlt.Service.PersonSltService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,7 +12,7 @@ import java.util.List;
 public class PersonSltController {
 
     @Autowired
-    PersonSltServiceImpl personSltService;
+    PersonSltService personSltService;
 
     @GetMapping("/selectAll")
     public List<PersonSltEntity> getAll() {
