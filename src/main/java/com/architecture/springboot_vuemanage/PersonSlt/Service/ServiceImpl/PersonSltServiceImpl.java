@@ -2,7 +2,6 @@ package com.architecture.springboot_vuemanage.PersonSlt.Service.ServiceImpl;
 
 import com.architecture.springboot_vuemanage.PersonSlt.Entity.PersonSltEntity;
 import com.architecture.springboot_vuemanage.PersonSlt.Mapper.PersonSltMapper;
-import com.architecture.springboot_vuemanage.PersonSlt.Service.PersonSltService;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
@@ -10,10 +9,9 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class PersonSltServiceImpl extends ServiceImpl<PersonSltMapper, PersonSltEntity> implements PersonSltService {
+public class PersonSltServiceImpl extends ServiceImpl<PersonSltMapper, PersonSltEntity>  {
 
 
-    @Override
     public List<PersonSltEntity> getSelectAll() {
         return getBaseMapper().selectAll();
     }
