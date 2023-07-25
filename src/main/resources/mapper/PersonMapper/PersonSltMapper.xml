@@ -10,7 +10,7 @@
 
     <select id="getOne" resultType="java.lang.String">
         select concat(a.id, "_", a.name)
-        from person a
+        from person  a
         where a.id = #{id}
     </select>
 
