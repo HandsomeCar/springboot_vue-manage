@@ -1,0 +1,2 @@
+ALTER TABLE test.person ADD org VARCHAR(20) DEFAULT NULL COMMENT '组织';
+
