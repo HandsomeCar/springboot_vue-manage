@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  * 前后端跨域
  */
 @Configuration
-public class Config implements WebMvcConfigurer {
+public class CorsConfig implements WebMvcConfigurer {
 
     /**
      * 开启跨域
